@@ -1,7 +1,8 @@
 from django.test import TestCase
 import django
 from django.db.models import Sum
-import pandas as pd
+#import pandas as pd
+import modin.pandas as pd
 import numpy as np
 from .models import (MyModel, Trader, Security, TradeLog, TradeLogNote,
                      MyModelChoice, Portfolio)
